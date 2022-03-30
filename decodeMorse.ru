@@ -1,11 +1,11 @@
-snake_case.$morseCode = 'Hello'
+# snake_case.$morseCode = 'Hello'
 
 class Decode
     def initialize(name)
         @name = name
     end
     def print_code
-        puts "#$morseCode #@name"
+        puts "morseCode #@name"
     end
 
     def print_new(id)
