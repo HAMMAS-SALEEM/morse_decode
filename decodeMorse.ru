@@ -1,4 +1,4 @@
-$morseCode = 'Hello'
+snake_case.$morseCode = 'Hello'
 
 class Decode
     def initialize(name)
