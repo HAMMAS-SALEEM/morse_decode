@@ -7,4 +7,9 @@ class Decode
     def print_code
         puts "#$morseCode #@name"
     end
+
+    def print_new(id)
+        @id = id
+        puts @id
+    end
 end
