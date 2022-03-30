@@ -27,11 +27,15 @@ MORSE = {
   "--.." => "Z",
 }
 
-def decoder(code)
+def decode_char(str)
   MORSE.each {
   |key, value|
-  if key == code
+  if key == str
   return "#{value}"
   end
 }
+end
+
+def decode_word(str)
+  return str.split(" ").each { |i| puts("#{decode_char(i)}") }
 end
