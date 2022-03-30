@@ -1,4 +1,4 @@
-morse_dict = {
+MORSE = {
   ".-" => "A",
   "-..." => "B",
   "-.-." => "C",
@@ -25,14 +25,13 @@ morse_dict = {
   "-..-" => "X",
   "-.--" => "Y",
   "--.." => "Z",
-};
+}
 
-morse_dict.each
-
-# def decode_morse(morse_code)
-#   morse_dict
-#     .split('   ')
-#     .map do |word|
-#       word.split(' ')
-#     end
-# end
+def decoder(code)
+  MORSE.each {
+  |key, value|
+  if key == code
+  return "#{value}"
+  end
+}
+end
