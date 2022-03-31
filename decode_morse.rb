@@ -25,7 +25,7 @@ MORSE = {
   '-..-' => 'X',
   '-.--' => 'Y',
   '--..' => 'Z'
-}.freeze
+}
 
 def decode_char(str)
   MORSE.each do |key, value|
@@ -34,5 +34,17 @@ def decode_char(str)
 end
 
 def decode_word(str)
-  str.split.each { |i| puts(decode_char(i).to_s) }
+  message = ''
+  str.split(" ").each do |i| 
+  message += "#{decode_char(i)}"
+  end
+  message
+end
+
+def decode(str)
+  message = []
+  str.split("  ").each do |i| 
+  message.push("#{decode_word(i)}")
+  end
+  message.join(" ")
 end
