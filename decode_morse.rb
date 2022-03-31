@@ -43,8 +43,10 @@ end
 
 def decode(str)
   message = []
-  str.split('  ').each do |i|
+  str.split('   ').each do |i|
     message.push(decode_word(i).to_s)
   end
   message.join(' ')
 end
+
+puts decode('.-   -... --- -..-   ..-. ..- .-.. .-..   --- ..-.   .-. ..- -... .. . ...')
