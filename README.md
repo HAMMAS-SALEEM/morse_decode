@@ -1,6 +1,7 @@
 # decodeMorse
 
-This app decodes morse code messages:
+This app decodes morse code messages built by Ruby a very strong back end language. It takes a morse code string and convert into letters, words and complete sentence.
+
 ### morse structure
 - characters separated by a single space
 - words separated by a three spaces
